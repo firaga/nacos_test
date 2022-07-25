@@ -28,6 +28,8 @@ func init() {
 		LogDir:              "/tmp/nacos/log",
 		CacheDir:            "/tmp/nacos/cache",
 		LogLevel:            "warn",
+		Username:            "nacos",
+		Password:            "nacos",
 	}
 
 	namingClient, _ = clients.CreateNamingClient(map[string]interface{}{

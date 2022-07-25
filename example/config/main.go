@@ -27,7 +27,8 @@ import (
 
 func main() {
 	addr := "127.0.0.1"
-	port := uint64(8080)
+	port := uint64(8848)
+	namespaceId := ""
 	sc := []constant.ServerConfig{
 		{
 			IpAddr: addr,
@@ -44,12 +45,14 @@ func main() {
 	}
 
 	cc := constant.ClientConfig{
-		NamespaceId:         "e525eafa-f7d7-4029-83d9-008937f9d468", //namespace id
+		NamespaceId:         namespaceId, //namespace id
 		TimeoutMs:           5000,
 		NotLoadCacheAtStart: true,
 		LogDir:              "/tmp/nacos/log",
 		CacheDir:            "/tmp/nacos/cache",
 		LogLevel:            "debug",
+		Username:            "nacos",
+		Password:            "nacos",
 	}
 	//or a more graceful way to create ClientConfig
 	_ = *constant.NewClientConfig(
