@@ -2,7 +2,7 @@ module nacos_test
 
 go 1.17
 
-require github.com/nacos-group/nacos-sdk-go v1.1.1
+require github.com/nacos-group/nacos-sdk-go v1.1.3
 
 require (
 	github.com/aliyun/alibaba-cloud-sdk-go v1.61.18 // indirect

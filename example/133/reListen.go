@@ -7,11 +7,13 @@ import (
 	"github.com/nacos-group/nacos-sdk-go/vo"
 	"log"
 	"os"
+	"strconv"
 	"time"
 )
 
 func init() {
-	file := "./" + "message" + ".txt"
+
+	file := "/Users/firaga/Gode/nacos_test/" + "message." + strconv.FormatInt(time.Now().Unix(), 10) + ".txt"
 	logFile, err := os.OpenFile(file, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0766)
 	if err != nil {
 		panic(err)

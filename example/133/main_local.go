@@ -24,14 +24,14 @@ import (
 )
 
 func main() {
-	addr := "confcenter-lab.eeo-inc.com"
-	port := uint64(443)
-	scheme := "https"
-	namespaceId := "0f112964-f943-4cac-acdb-5d44966a394d"
-	dataId := "app"
-	group := "eeo_core_business"
-	username := "opsconf"
-	password := "ee0^tlkAq8yr"
+	addr := "127.0.0.1"
+	port := uint64(8848)
+	scheme := "http"
+	namespaceId := "public"
+	dataId := "test-data-2"
+	group := "test-group"
+	username := "nacos"
+	password := "nacos"
 	sc := []constant.ServerConfig{
 		{
 			Scheme: scheme,
